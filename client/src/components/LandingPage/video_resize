@@ -1,0 +1,30 @@
+
+	// Main video resize optimization
+	function optimizationVideo() {
+		var $bg = $('.main__video');
+		var windowWidth = window.innerWidth;
+		var windowHeight = Math.max(window.innerHeight * 0.83, 400);
+		var size = windowWidth / windowHeight;
+
+		if ($bg && size >= imageRatio) {
+			$bg.css({
+				width: '100%',
+				height: 'auto'
+			});
+		} else if ($bg && size < imageRatio) {
+			$bg.css({
+				width: 'auto',
+				height: '100%'
+			});
+		}
+	}
+
+
+
+	// notiOn();
+
+	$(window).on('scroll', scrollHeader);
+
+
+		$(window).on('load resize', optimizationVideo);
+		

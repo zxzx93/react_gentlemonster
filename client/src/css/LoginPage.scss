@@ -1,0 +1,105 @@
+* {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 801px) {
+  div.wrap {
+    width: 100%;
+    padding: 250px 0;
+
+    div.wrap2 {
+      width: 800px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    div.login {
+      width: 400px;
+      padding: 20px 70px 20px 0;
+      border-right: 1.2px solid #c8c5c5;
+    }
+
+    div.register {
+      width: 400px;
+      padding: 20px 0px 20px 70px;
+    }
+
+    div.mobile-gnb {
+      display: none;
+    }
+  }
+
+  div.NewRegister {
+    p.description {
+      font-size: 13px;
+      margin-bottom: 45px;
+    }
+
+    a {
+      color: #fff;
+      font-size: 12px;
+    }
+
+    button.Register_button {
+      width: 240px;
+      height: 37px;
+      background-color: #000;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  nav {
+    position: relative;
+    z-index: 1;
+
+    a.ci {
+      position: absolute;
+      width: 20vw;
+      top: 2.5vw;
+      left: 3vw;
+      font-size: 0;
+      padding: 2px;
+      background: #999999;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    ul.gnb-items {
+      display: none;
+    }
+
+    div.mobile-gnb {
+      position: absolute;
+      right: 1vw;
+      top: 1vw;
+    }
+  }
+
+  .MuiListItem-root {
+    a {
+      display: inline-block;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 5vw;
+      margin-bottom: 2vh;
+      padding-left: 4vw;
+    }
+
+    a.active {
+      color: #ffb100;
+      border-left: 2vw solid #ffb100;
+      padding-left: 2vw;
+    }
+
+    a.submenu {
+      margin-left: 10vw;
+      font-size: 4vw;
+    }
+  }
+}

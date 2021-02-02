@@ -1,0 +1,130 @@
+* {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 801px) {
+  $BackGroundColor-primary: transparent;
+
+  nav {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    z-index: 9999;
+    padding: 30px 30px 16px;
+    box-sizing: border-box;
+    line-height: 35px;
+    background: 'transparent';
+
+    a.ci svg {
+      width: 210px;
+      //padding: 2px 0 0;
+      font-size: 30px;
+      padding: 2px;
+      font-weight: 700;
+      color: #fff;
+      background: #fff;
+    }
+
+
+
+    ul.leftGnb-items {
+      position: absolute;
+      display: inline-block;
+      margin-left: 15%;
+
+
+      li {
+        display: inline-block;
+
+        a {
+          font-size: 15px;
+          padding: 0 20px;
+          color: #fff;
+          font-weight: bolder;
+        }
+
+        a.active {
+          color: tomato;
+        }
+      }
+    }
+
+    ul.rightGnb-items {
+      position: absolute;
+      display: inline-block;
+      right: 30px;
+
+      li {
+        display: inline-block;
+
+        a {
+          font-size: 15px;
+          padding: 0 15px;
+          color: #fff;
+          font-weight: bolder;
+        }
+      }
+    }
+
+    div.mobile-gnb {
+      display: none;
+    }
+  }
+}
+
+
+
+@media (max-width: 800px) {
+  nav {
+    position: relative;
+    z-index: 1;
+
+    a.ci {
+      position: absolute;
+      width: 20vw;
+      top: 2.5vw;
+      left: 3vw;
+      font-size: 0;
+      padding: 2px;
+      background: #999999;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    ul.gnb-items {
+      display: none;
+    }
+
+    div.mobile-gnb {
+      position: absolute;
+      right: 1vw;
+      top: 1vw;
+    }
+  }
+
+  .MuiListItem-root {
+    a {
+      display: inline-block;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 5vw;
+      margin-bottom: 2vh;
+      padding-left: 4vw;
+    }
+
+    a.active {
+      color: #ffb100;
+      border-left: 2vw solid #ffb100;
+      padding-left: 2vw;
+    }
+
+    a.submenu {
+      margin-left: 10vw;
+      font-size: 4vw;
+    }
+  }
+}
